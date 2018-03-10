@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C5CAE9"
+        android:orientation="vertical"
+        tools:context="com.example.android.spanishquiz.MainActivity">
+
+        <TextView
+            android:id="@+id/q1"
+            style="@style/QuestionStyle"
+            android:layout_marginTop="20dp"
+            android:text="1. What is 'they' in spanish?" />
+
+        <RadioGroup
+            android:id="@+id/q1_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/q1a"
+                style="@style/AnswerStyle"
+                android:text="a.  los" />
+
+            <RadioButton
+                android:id="@+id/q1b"
+                style="@style/AnswerStyle"
+                android:text="b.  ellos" />
+
+            <RadioButton
+                android:id="@+id/q1c"
+                style="@style/AnswerStyle"
+                android:text="c.  nosotros" />
+
+            <RadioButton
+                android:id="@+id/q1d"
+                style="@style/AnswerStyle"
+                android:text="d.  como" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/q2"
+            style="@style/QuestionStyle"
+            android:text="2. What is 'the' in spanish? (Select all)" />
+
+        <CheckBox
+            android:id="@+id/q2a"
+            style="@style/AnswerStyle"
+            android:text="a.  escribos" />
+
+        <CheckBox
+            android:id="@+id/q2b"
+            style="@style/AnswerStyle"
+            android:text="b.  los" />
+
+        <CheckBox
+            android:id="@+id/q2c"
+            style="@style/AnswerStyle"
+            android:text="c.  mucho" />
+
+        <CheckBox
+            android:id="@+id/q2d"
+            style="@style/AnswerStyle"
+            android:text="d.  las" />
+
+        <TextView
+            android:id="@+id/q3"
+            style="@style/QuestionStyle"
+            android:text="3. Translate 'Yo escribo libros' to English" />
+
+        <EditText
+            android:id="@+id/q3_box"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="26dp"
+            android:background="#EDE7F6"
+            android:inputType="text|textMultiLine"
+            android:maxLines="4"
+            android:scrollHorizontally="false" />
+
+        <TextView
+            android:id="@+id/q4"
+            style="@style/QuestionStyle"
+            android:text="4.  Reply to 'Gracias' in spanish" />
+
+        <EditText
+            android:id="@+id/q4_box"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="26dp"
+            android:background="#EDE7F6"
+            android:inputType="text|textMultiLine"
+            android:maxLines="4"
+            android:scrollHorizontally="false" />
+
+        <TextView
+            android:id="@+id/q5"
+            style="@style/QuestionStyle"
+            android:text="5.  Children in spanish (Select all)" />
+
+        <CheckBox
+            android:id="@+id/q5a"
+            style="@style/AnswerStyle"
+            android:text="a.  ninos" />
+
+        <CheckBox
+            android:id="@+id/q5b"
+            style="@style/AnswerStyle"
+            android:text="b.  vino" />
+
+        <CheckBox
+            android:id="@+id/q5c"
+            style="@style/AnswerStyle"
+            android:text="c.  ninas" />
+
+        <CheckBox
+            android:id="@+id/q5d"
+            style="@style/AnswerStyle"
+            android:text="d.  ustedes" />
+
+        <TextView
+            android:id="@+id/q6"
+            style="@style/QuestionStyle"
+            android:layout_marginTop="20dp"
+            android:text="6. What is 'wine' in spanish?" />
+
+        <RadioGroup
+            android:id="@+id/q6_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/q6a"
+                style="@style/AnswerStyle"
+                android:text="a.  somos" />
+
+            <RadioButton
+                android:id="@+id/q6b"
+                style="@style/AnswerStyle"
+                android:text="b.  cartas" />
+
+            <RadioButton
+                android:id="@+id/q6c"
+                style="@style/AnswerStyle"
+                android:text="c.  vino" />
+
+            <RadioButton
+                android:id="@+id/q6d"
+                style="@style/AnswerStyle"
+                android:text="d.  ustedes" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#311B92"
+            android:text="Submit"
+            android:textColor="#EDE7F6"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:onClick="submitButton"/>
+    </LinearLayout>
+</ScrollView>
